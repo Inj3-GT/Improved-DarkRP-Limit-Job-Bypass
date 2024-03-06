@@ -81,7 +81,6 @@ if (CLIENT) then
     if (ipr_BpLimit.Refresh_Lua) then
         ipr_InitFunc()
     end
-
     net.Receive("iprbp_uptjob", ipr_InitFunc)
     hook.Add("InitPostEntity", "Improved_Limit_Job_Bypass", ipr_InitFunc)
 else
