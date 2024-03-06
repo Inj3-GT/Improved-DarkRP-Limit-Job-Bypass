@@ -166,6 +166,6 @@ else
     if (ipr_BpLimit.Refresh_Lua) then
         ipr_InitFunc_Override()
     end
-    print("Bypass Job limit DarkRP v2.2 by Inj3 loaded !")
+    print("Bypass Job limit DarkRP v2.3 by Inj3 loaded !")
 end
 ipr_BpLimit.Refresh_Lua = ipr_BpLimit.Refresh_Lua or {}
