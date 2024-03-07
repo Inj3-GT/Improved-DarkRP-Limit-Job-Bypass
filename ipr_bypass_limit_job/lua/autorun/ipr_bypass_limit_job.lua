@@ -134,7 +134,7 @@ else
                 end
                 local ipr_ex = RPExtraTeams[id]
                 if not ipr_ex then
-                    return
+                    return error("ID is not valid !", 1)
                 end
 
                 local ipr_g = s:GetUserGroup()
