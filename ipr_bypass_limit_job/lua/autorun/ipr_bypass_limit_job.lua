@@ -4,7 +4,6 @@
 ---- // https://steamcommunity.com/id/Inj3/
 local ipr = {} --- Do not touch !
 
---- Configuration / (Restart your server if you add new groups.)
 --- This will add extra places to your jobs!
 --- If you have defined a number in your "darkrp jobs" file, they will add up.
 
