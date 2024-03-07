@@ -2,7 +2,7 @@
 
 Bypass the darkrp job access limit
 ----------------
-This script bypass the DarkRP 'changeTeam' function.
+This script bypass some DarkRP functions such as changeTeam/ChangeTeam/SetUserGroup.
 
 - Add your VIP groups or other specific groups that will have unlimited access, or a configured limit to access your jobs if the limit is reached (that the job is complete) in your DarkRP gamemode.
 - If you have defined a maximum number of available slots for your job in your "darkrp jobs.lua" file, they will add up.
