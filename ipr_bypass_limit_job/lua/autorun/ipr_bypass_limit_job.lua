@@ -20,7 +20,7 @@ ipr.tbl_bypass = {
 
         ["Marchand Noir"] = { --- This is an example.
             limit_reached = {
-                ["superadmin"] = 2,
+                ["superadmin"] = 1,
                 ["vip"] = 1,
                 ["admin"] = 2,
                 ["vip +"] = 2,
@@ -143,7 +143,7 @@ else
                     local ipr_m = team.NumPlayers(id)
                     local ipr_l = ipr.tbl_bypass[ipr_t].limit_reached[ipr_g]
 
-                    local ipr_c = ipr_l + ipr_ex.max - 1
+                    local ipr_c = ipr_l + ipr_ex.max
                     local ipr_n = ipr_m >= ipr_c
                     local ipr_f = ipr_l ~= 0
 
