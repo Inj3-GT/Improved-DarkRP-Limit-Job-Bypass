@@ -127,7 +127,7 @@ else
             local ipr_CacheFunc = ipr_meta[n]
             ipr_meta[n] = function(s, id, f, v, g)
                 if not IsValid(s) then
-                    return error("Player is not valid !", 1)
+                    return
                 end
                 if (f or g) then
                     return ipr_CacheFunc(s, id, f, v, g)
