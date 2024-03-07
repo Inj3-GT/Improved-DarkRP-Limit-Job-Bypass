@@ -148,7 +148,7 @@ else
                     local ipr_f = ipr_l ~= 0
 
                     if (ipr_f and ipr_n) then
-                        return DarkRP.notify(s, 0, 3, "[Ipr_Limit_Job] Vous avez atteint la limite des " ..ipr_l.. " slots supplémentaires pour votre rang défini pour ce job.")
+                        return DarkRP.notify(s, 0, 3, "[Ipr_Limit_Job] Vous avez atteint la limite des " ..ipr_l.. " slots supplémentaires pour votre rang défini dans ce job.")
                     end
 
                     local ipr_p = not ipr_f and true or not ipr_n and true or false
