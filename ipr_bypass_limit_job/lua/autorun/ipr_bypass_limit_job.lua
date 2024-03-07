@@ -20,7 +20,7 @@ ipr.tbl_bypass = {
 
         ["Marchand Noir"] = { --- This is an example.
             limit_reached = {
-                ["superadmin"] = 1,
+                ["superadmin"] = 2,
                 ["vip"] = 1,
                 ["admin"] = 2,
                 ["vip +"] = 2,
@@ -143,12 +143,13 @@ else
                     local ipr_m = team.NumPlayers(id)
                     local ipr_l = ipr.tbl_bypass[ipr_t].limit_reached[ipr_g]
 
-                    local ipr_c = ipr_l + ipr_ex.max
+                    local ipr_c = ipr_l + ipr_ex.max - 1
                     local ipr_n = ipr_m >= ipr_c
                     local ipr_f = ipr_l ~= 0
 
                     if (ipr_f and ipr_n) then
-                        return DarkRP.notify(s, 0, 3, "[Ipr_Limit_Job] Vous avez atteint la limite des " ..ipr_l.. " slots supplémentaires pour votre rang défini dans ce job.")
+                        local ipr_s = ipr_l > 1 and "s" or " "
+                        return DarkRP.notify(s, 0, 3, "[Ipr_Limit_Job] Vous avez atteint la limite de"..ipr_s.." "..ipr_l.." slot"..ipr_s.." supplémentaire"..ipr_s.." pour votre rang "..ipr_g.." défini pour le métier "..ipr_t)
                     end
 
                     local ipr_p = not ipr_f and true or not ipr_n and true or false
