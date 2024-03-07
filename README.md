@@ -1,4 +1,4 @@
-# Improved-DarkRP-Limit-Job-Bypass
+Improved-DarkRP-Limit-Job-Bypass
 ----------------
 This script bypass some DarkRP functions such as changeTeam/ChangeTeam/SetUserGroup.
 
