@@ -112,6 +112,7 @@ else
                 if not IsValid(s) then
                     return
                 end
+                                
                 ipr_CacheFunc(s, str)
                 ipr_UpdateCall(s)
             end
