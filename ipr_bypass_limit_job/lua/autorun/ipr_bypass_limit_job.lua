@@ -41,7 +41,7 @@ ipr.tbl_bypass = {
 ipr_BpLimit = ipr_BpLimit or {}
 
 if (CLIENT) then
-    function ipr_BpLimit.Max(t) --- function for the F4 menu, check the description on github to know how it works (if '-1' you have not correctly added the player table RPExtraTeams !)
+    function ipr_BpLimit.Max(t) --- Optional : function for the F4 menu, check the description on github to know how it works (if '-1' you have not correctly added the player table RPExtraTeams !)
         return (t and (t.max_bp or t.max)) or -1
     end
 
