@@ -127,7 +127,7 @@ else
             local ipr_CacheFunc = ipr_meta[n]
             ipr_meta[n] = function(s, id, f, v, g)
                 if not IsValid(s) then
-                    return
+                    return error("Player is not valid !", 1)
                 end
                 if (f or g) then
                     return ipr_CacheFunc(s, id, f, v, g)
@@ -148,8 +148,7 @@ else
                     local ipr_f = ipr_l ~= 0
 
                     if (ipr_f and ipr_n) then
-                        DarkRP.notify(s, 0, 3, "[Ipr_Limit_Job] Vous avez atteint la limite des " ..ipr_l.. " slots supplémentaires pour votre rang défini dans ce job.")
-                        return
+                        return DarkRP.notify(s, 0, 3, "[Ipr_Limit_Job] Vous avez atteint la limite des " ..ipr_l.. " slots supplémentaires pour votre rang défini dans ce job.")
                     end
 
                     local ipr_p = not ipr_f and true or not ipr_n and true or false
