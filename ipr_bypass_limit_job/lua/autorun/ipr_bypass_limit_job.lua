@@ -153,7 +153,6 @@ else
                     end
 
                     local ipr_p = not ipr_f and true or not ipr_n and true or false
-                                        
                     return ipr_CacheFunc(s, id, ipr_p, v, ipr_p)
                 end
                 ipr_CacheFunc(s, id, f, v, g)
